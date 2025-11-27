@@ -25,9 +25,6 @@ public class StockService {
 
   public Stock getByProductId(String id) {
     try {
-      if (Math.random() >= 0.75) {
-        Thread.sleep(1100);
-      }
       return stockRepository.findById(UUID.fromString(id))
           .orElseThrow(ProductNotFoundException::new).toDTO();
     } catch (IllegalArgumentException e) {
