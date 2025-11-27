@@ -1,6 +1,6 @@
 microservice:
   image:
-    repository: ghcr.io/vmaleze/opentelemetry-hands-on/order
+    repository: ghcr.io/apasteau/opentelemetry-hands-on/order
     tag: "latest"
   environment:
     KAFKA_BROKERS: kafka-cluster:9092
